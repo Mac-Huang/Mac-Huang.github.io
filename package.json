@@ -30,6 +30,6 @@
     "three": "^0.161.0"
   },
   "devDependencies": {
-    "ejs-lint": "^2.0.0"
+    "ejs-lint": "^2.0.1"
   }
 }
