@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuming's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="logo-img">
+                <span>Xuming</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to My World</h1>
+                    <p class="subtitle">Exploring Technology, Sharing Knowledge</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="cta-button primary">View My Work</a>
+                        <a href="#contact" class="cta-button secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/500x400" alt="Hero Image" class="floating">
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x500" alt="Profile Image">
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Xuming</h3>
+                    <p>I'm a passionate developer and tech enthusiast, always eager to learn and share knowledge. With a
+                        strong foundation in web development and a keen eye for design, I create engaging digital
+                        experiences that make a difference.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fab fa-node-js"></i> Node.js</span>
+                            <span><i class="fab fa-python"></i> Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="button"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="button"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with React and Node.js</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="button"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="button"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>Mobile app for tracking workouts and nutrition</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="button"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="button"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Design</h3>
+                        <p>Modern portfolio website with smooth animations</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Blog Post 1">
+                        <div class="blog-date">
+                            <span class="day">15</span>
+                            <span class="month">Mar</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Getting Started with React Hooks</h3>
+                        <p>Learn how to use React Hooks to simplify your functional components...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Blog Post 2">
+                        <div class="blog-date">
+                            <span class="day">10</span>
+                            <span class="month">Mar</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Modern CSS Techniques</h3>
+                        <p>Explore the latest CSS features and how to use them effectively...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@xuming.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://via.placeholder.com/40" alt="Logo">
+                <span>Xuming</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Xuming. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
